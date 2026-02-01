@@ -1,0 +1,111 @@
+/* ---------------------- HERO ----------------------- */
+.hero {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.list-card-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.card-hero {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  width: 220px;
+  background-color: white;
+
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.card-hero strong {
+  font-size: 12px;
+  color: var(--main-color);
+}
+
+/* ---------------------- INTRO ----------------------- */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.num-list {
+  display: flex;
+  gap: 20px;
+}
+
+.num-list-number {
+  width: 30px;
+  height: 30px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------- RESUMÉ ----------------------- */
+
+.resume {
+  background-color: var(--secondary-color);
+  padding: 60px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.resume p {
+  max-width: 600px;
+}
+
+.list-card-resume {
+  display: flex;
+  text-align: center;
+  gap: 20px;
+  margin: auto;
+  padding: 0px 60px;
+}
+
+.card-resume {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  width: 220px;
+  background-color: white;
+
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.card-resume strong {
+  font-size: 12px;
+  color: var(--main-color);
+}

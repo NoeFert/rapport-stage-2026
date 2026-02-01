@@ -1,0 +1,28 @@
+/* accordéon */
+.accordion {
+  border: 1px solid #eee;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.accordion-title {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.accordion-toggle {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}

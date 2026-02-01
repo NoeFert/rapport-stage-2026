@@ -1,0 +1,127 @@
+/* ---------------------- VARIABLES ----------------------- */
+:root {
+  --max-width: 1100px;
+
+  /*color*/
+  --light-grey: #eee;
+  --main-color: rgb(49, 143, 136);
+  --secondary-color: rgb(212, 234, 197);
+  --tertiary-color: rgb(197, 151, 83);
+
+  /*Font*/
+  --font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --big-font-size: 30px;
+  --medium-font-size: 16px;
+  --small-font-size: 12px;
+}
+
+/* ------------------ HEADER & FOOTER ----------------------*/
+header,
+main,
+footer {
+  margin: 0px 30px;
+  font-family: var(--font-family);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0px;
+  border-bottom: 1px solid var(--light-grey);
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px 0px;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: gray;
+  text-transform: uppercase;
+}
+
+.active-nav-link {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--light-grey);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+/* ------------------ GLOBAL STYLES ----------------------*/
+h2 {
+  color: var(--main-color);
+  font-size: var(--big-font-size);
+}
+
+h3 {
+  color: var(--tertiary-color);
+  font-weight: 600;
+  font-size: var(--medium-font-size);
+}
+
+.card {
+  border: 1px solid var(--light-grey);
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.list-card {
+  display: flex;
+  gap: 20px;
+}
+
+section {
+  margin: 60px 0px;
+}
+
+/* boutons */
+.main-button {
+  background-color: var(--main-color);
+  color: white;
+  border: 1px solid var(--main-color);
+
+  padding: 10px 25px;
+  border-radius: 25px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: var(--medium-font-size);
+}
+
+.main-button:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.secondary-button {
+  background-color: white;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+
+  padding: 5px 15px;
+  border-radius: 25px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: var(--small-font-size);
+  font-weight: 600;
+}
