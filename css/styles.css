@@ -1,12 +1,13 @@
 /* ---------------------- VARIABLES ----------------------- */
 :root {
   --max-width: 1100px;
+  --max-width-content: 800px;
 
   /*color*/
   --light-grey: #eee;
   --main-color: rgb(49, 143, 136);
   --secondary-color: rgb(212, 234, 197);
-  --tertiary-color: rgb(197, 151, 83);
+  --tertiary-color: rgb(67, 167, 82);
 
   /*Font*/
   --font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -19,12 +20,12 @@
 header,
 main,
 footer {
-  margin: 0px 30px;
   font-family: var(--font-family);
 }
 
 * {
   box-sizing: border-box;
+  line-height: 23px;
 }
 
 /* Header */
@@ -35,7 +36,7 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  padding: 20px 0px;
+  padding: 20px 40px;
   z-index: 10;
 }
 
@@ -61,26 +62,30 @@ nav a {
 footer {
   border-top: 1px solid var(--light-grey);
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 10px 0px;
+  padding: 30px 40px;
 }
 
 /* ------------------ GLOBAL STYLES ----------------------*/
 h2 {
   color: var(--main-color);
   font-size: var(--big-font-size);
+  margin: 40px 0px;
 }
 
 h3 {
   color: var(--tertiary-color);
   font-weight: 600;
   font-size: var(--medium-font-size);
+  text-transform: uppercase;
 }
 
 .card {
   border: 1px solid var(--light-grey);
   border-radius: 25px;
   padding: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.03);
 }
 
 .list-card {
@@ -89,7 +94,69 @@ h3 {
 }
 
 section {
-  margin: 60px 0px;
+  margin: 0px 0px 80px 0px;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section div {
+  max-width: var(--max-width-content);
+}
+
+.list-logo {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.list-logo img {
+  width: 40px;
+  object-fit: contain;
+}
+.hero {
+  background: linear-gradient(135deg, #093532, #b9f6c4);
+  padding: 70px;
+}
+
+.h1 {
+  font-size: 40px;
+}
+
+/* liste à plusieurs numéros */
+.num-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.num-list-element {
+  max-width: 300px;
+}
+
+.num-list-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.num-list-number {
+  width: 30px;
+  height: 30px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.num-list p {
+  margin-bottom: 20px;
 }
 
 /* boutons */
@@ -100,14 +167,16 @@ section {
 
   padding: 10px 25px;
   border-radius: 25px;
+  width: fit-content;
 
   text-decoration: none;
   text-transform: uppercase;
   font-size: var(--medium-font-size);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
 }
 
 .main-button:hover {
-  transition: 0.5s;
+  transition: 0.3s;
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
@@ -119,9 +188,24 @@ section {
 
   padding: 5px 15px;
   border-radius: 25px;
+  width: fit-content;
 
   text-decoration: none;
   text-transform: uppercase;
   font-size: var(--small-font-size);
   font-weight: 600;
+}
+
+.secondary-button:hover {
+  background-color: var(--main-color);
+  color: white;
+  transition: 0.3s;
+}
+
+/*--------------------------------------------*/
+/* --------------- DESKTOP -------------------*/
+@media (min-width: 769px) {
+  footer {
+    flex-direction: row;
+  }
 }

@@ -3,13 +3,21 @@
   min-height: 500px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   gap: 40px;
+
+  background: linear-gradient(135deg, #093532, #b9f6c4);
+  padding: 70px;
 }
 
 h1 {
-  font-size: 40px;
-  margin-top: 50px;
+  font-size: 30px;
+  margin-top: 70px;
+  line-height: 50px;
+
+  color: white;
+  text-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .list-card-hero {
@@ -42,12 +50,31 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+}
+
+.intro-text {
+  max-width: 600px;
+  margin: 0px 0px 60px 0px;
+  text-align: center;
 }
 
 .num-list {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.num-list-element {
+  max-width: 300px;
+}
+
+.num-list-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .num-list-number {
@@ -62,6 +89,10 @@ h1 {
   align-items: center;
 }
 
+.num-list p {
+  margin-bottom: 20px;
+}
+
 /* ---------------------- RESUMÉ ----------------------- */
 
 .resume {
@@ -71,6 +102,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 40px;
 }
 
 .resume img {
@@ -85,9 +117,10 @@ h1 {
 }
 
 .list-card-resume {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   text-align: center;
-  gap: 20px;
+  gap: 10px;
   margin: auto;
   padding: 0px 60px;
 }
@@ -97,15 +130,40 @@ h1 {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 10px;
-
-  width: 220px;
   background-color: white;
 
   font-size: 20px;
   text-transform: uppercase;
 }
 
+.card-resume:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 .card-resume strong {
   font-size: 12px;
   color: var(--main-color);
+}
+
+/*--------------------------------------------*/
+/* --------------- DESKTOP -------------------*/
+
+@media (min-width: 769px) {
+  h1 {
+    font-size: 60px;
+    text-align: left;
+  }
+  .hero {
+    align-items: flex-start;
+  }
+
+  .num-list {
+    flex-direction: row;
+  }
+
+  .list-card-resume {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
