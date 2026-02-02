@@ -147,10 +147,6 @@ section div {
   width: 40px;
   object-fit: contain;
 }
-.hero {
-  background: linear-gradient(135deg, #093532, #b9f6c4);
-  padding: 70px;
-}
 
 .h1 {
   font-size: 40px;
