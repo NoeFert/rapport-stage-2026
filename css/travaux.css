@@ -1,7 +1,6 @@
 .dataconsult p,
 .decouvrir p {
   max-width: 500px;
-  text-align: center;
 }
 
 /* ----------------- PROJETS ------------------- */
@@ -47,6 +46,7 @@
 .list-project-data {
   display: flex;
   justify-content: space-between;
+  gap: 5px;
 }
 
 .project-data {

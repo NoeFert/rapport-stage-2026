@@ -11,7 +11,9 @@
   <body>
     <header>
       <div>Rapport de stage</div>
-      <nav>
+      <input type="checkbox" id="burger-toggle" />
+      <label for="burger-toggle" class="burger"> ☰ </label>
+      <nav class="main-nav">
         <a href="index.html">Accueil</a>
         <a href="contexte.html">Contexte</a>
         <a href="travaux.html">Travaux</a>
@@ -20,9 +22,6 @@
     </header>
 
     <main>
-      <section class="hero">
-        <h1>BILAN</h1>
-      </section>
       <section>
         <div class="pro-cons">
           <div>
@@ -36,9 +35,7 @@
           <div class="num-list">
             <div class="num-list-element">
               <div class="num-list-title">
-                <div class="num-list-number">
-                  <img src="img/feuille-de-trefle.png" />
-                </div>
+                <div class="num-list-number"></div>
                 <strong>Points chanceux</strong>
               </div>
               <ul>
@@ -52,12 +49,12 @@
                 <div class="num-list-number">
                   <p></p>
                 </div>
-                <strong>Points ayant pu être améliorer</strong>
+                <strong>Points ayant pu être améliorés</strong>
               </div>
               <ul>
                 <li>Moins de télétravail</li>
                 <li>Moins besoin d'aide de l'IA</li>
-                <li>Consacrer plus de temps pour ce rapport</li>
+                <li>Consacrer plus de temps en avance pour ce rapport</li>
               </ul>
             </div>
           </div>
@@ -65,7 +62,7 @@
       </section>
 
       <section class="skills">
-        <div>
+        <div class="skills-block">
           <strong>Hardskills</strong>
           <div class="list-skills">
             <p>Laravel</p>
@@ -76,38 +73,52 @@
             <p>Slack + Asana</p>
           </div>
         </div>
-        <div>
+        <div class="skills-block">
           <strong>Softskills</strong>
           <div class="list-skills">
             <p>Rigueur</p>
             <p>Professionnalisme</p>
             <p>Autonomie</p>
             <p>Organisation</p>
-            <p>Prise de notes</p>
             <p>Calcul des heures</p>
           </div>
         </div>
         <div class="before-after card">
-          <h3>Attentes</h3>
+          <h3>Attentes réalisées</h3>
           <ul>
             <li>
-              <p>Fullstack -></p>
+              <p>Fullstack</p>
               <img src="img/coche.png" />
             </li>
             <li>
-              <p>1ère expérience pro -></p>
-              <img src="img/coche.png" />
-              <p>(Jusqu'en prod !)</p>
-            </li>
-            <li>
-              <p>Nouveaux skills -></p>
+              <p>1ère expérience pro</p>
               <img src="img/coche.png" />
             </li>
             <li>
-              <p>Travail en agence -> Très peu</p>
+              <p>Nouveaux skills</p>
+              <img src="img/coche.png" />
+            </li>
+            <li>
+              <p>Travail en agence</p>
+              <p>Très peu</p>
             </li>
           </ul>
         </div>
+      </section>
+
+      <section>
+        <h2>Impacts de ce stage</h2>
+        <p class="impact-text">
+          Ce stage a eu un impact important sur mon parcours et m'a permis de
+          progresser autant sur le plan technique que professionnel. Il
+          représente pour moi un véritable pont entre ma formation et le monde
+          du travail, en me donnant une vision plus concrète du métier de
+          développeuse web. J'y ai acquis des conseils et des méthodes de
+          travail précieux que je réutiliserai tout au long de mon parcours.
+          Cette expérience me servira de base solide pour la suite de mes études
+          et mes futurs projets professionnels.
+        </p>
+        <p class="thanks">Merci pour votre lecture !</p>
       </section>
     </main>
 

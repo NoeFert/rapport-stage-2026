@@ -113,7 +113,7 @@ h1 {
 }
 
 .resume p {
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .list-card-resume {
@@ -165,5 +165,9 @@ h1 {
 
   .list-card-resume {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .resume p {
+    max-width: 600px;
   }
 }

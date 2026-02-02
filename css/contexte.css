@@ -74,6 +74,11 @@ li::marker {
   margin-top: 10px;
 }
 
+.social-media-list img {
+  width: 30px;
+  height: 30px;
+}
+
 /*---------------- CONTEXTE DE STAGE ----------*/
 .list-card-context {
   display: grid;
